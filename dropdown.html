@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+          .satır{
+            border-style:inset;
+            border-color: darkgreen;
+            border-width: 2%;
+            background-color: black;
+            
+        }
+   body {
+          background-image: url("https://wallpapercave.com/wp/wp2561072.jpg");
+          color:gainsboro
+
+   }
+ p.solid {border-style: solid;}
+ p.inset {border-style: inset;}
+  div.p {
+        font-size: 20px;
+  }
+  div.c {
+        font-size: 17px;
+  }
+  </style>
+<div class="p">
+<div class="container">
+  <h2>Dropdown ile açılır menü</h2>
+  <p class="solid">
+  .dropdown sınıfı, bir açılır menüyü belirtmek için kullanılır.
+  Açılır menüyü oluşturmak için ".dropdown-menu" sınıfını kullanmamız gerekir.
+  Açılır menüyü açmak için, .dropdown-toggle ve data-toggle="dropdown" sınıfına sahip bir düğme veya bağlantı kullanmamız lazım.
+  Alt tarafta oluşturduğum butona basarsanız alt tarafa doğru açılan bir dropdown menü örneği göreceksiniz. 
+  </p>                                
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Örneği
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Menu 1</a></li>
+      <li><a href="#">Menu 2</a></li>
+      <li><a href="#">Menu 3</a></li>
+    </ul>
+    
+  </div>
+  <div class="c">
+  <pre style="background-color: black;">
+    <code><code style="color: darkgreen;"> 
+      &ltdiv class="dropdown">
+      &ltbutton class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Secondary Dropdown Örneği
+        &ltspan class="caret">&lt/span>&lt/button>
+        &ltul class="dropdown-menu">
+        &ltli>&la href="#">Menu 1&l/a>&lt/li>
+        &ltli>&la href="#">Menu 2&l/a>&lt/li>
+        &ltli>&la href="#">Menu 3&l/a>&lt/li></code>
+  </code>
+  </pre>
+  </div>
+  <div class="dropdown">
+    <h2>Primary Dropdown Menü</h2>
+    <p class="solid">
+    Oluşturulan dropdown butonların farklı özellikleri de bulunuyor. Açılış yönünü değiştirebilir veya renklerini değiştirebiliriz.
+    Alt tarafta dropdown butonumuzun "btn-primary" özelliğini kullanarak rengini değiştirdik. 
+    </p>                                
+    <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Primary Dropdown Örneği
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Menu 1</a></li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+      <div class="c">
+
+        <pre style="background-color: black;">
+           <code><code style="color: darkgreen;"> 
+       &ltdiv class="dropdown">
+       &ltbutton class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Primary Dropdown Örneği
+       &ltspan class="caret">&lt/span>&lt/button></code>
+         </code>
+         </pre>
+       </div>
+
+
+      <h2>Secondary Dropdown Menü</h2>
+      <p class="solid">
+      İkinci renk özelliğimizde dropdown butonumuzun "btn-secondary" özelliğini kullanarak rengini değiştirdik.
+      </p>                                
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Secondary Dropdown Örneği
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+          <li><a href="#">Menu 3</a></li>
+        </ul>
+
+           <div class="c">
+
+           <pre style="background-color: black;">
+              <code><code style="color: darkgreen;"> 
+          &ltdiv class="dropdown">
+          &ltbutton class="btn btn-Secondary dropdown-toggle" type="button" data-toggle="dropdown">Secondary Dropdown Örneği
+          &ltspan class="caret">&lt/span>&lt/button></code>
+            </code>
+            </pre>
+          </div>
+        <h2>Success Dropdown Menü</h2>
+        <p class="solid">
+         Bir diğer renk özelliğimizde dropdown butonumuzun "btn-success" özelliğini kullanarak rengini değiştirdik. Bu özellik oluşturulan dropdown'a yeşil bir özellik katıyor.
+
+        <div class="dropdown">
+          <button class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">Success Dropdown Örneği
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Menu 1</a></li>
+            <li><a href="#">Menu 2</a></li>
+            <li><a href="#">Menu 3</a></li>
+          </ul>
+          <div class="p">
+            
+              <pre><code>
+            &ltdiv class="dropdown">
+            &ltbutton class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown">success Dropdown Örneği
+            &ltspan class="caret">&lt/span>&lt/button>
+                  </code>
+                  </pre>
+
+            </div>
+    </div>
+    
+    
+    
+  
+  
+</div>
+</div>
+<div class="container">
+  <h1>Dropdown açılan kısıma başlık ekleme</h1>
+  <p>.dropdown-header sınıfı, açılır menüye başlık eklemek ve kısımlara ayırmak için kullanılır:</p>
+  <p>Örneğin bir sitede profil kısmı oluşturacağınız zaman alt tarafta bulunan kısımdaki gibi dropdown menu yapabilirsiniz </p>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Profilim
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Hesap Ayarları</li>
+      <li><a href="#">Abonelikler</li>
+      <li><a href="#">Profili düzenle</a></li>
+      <li><a href="#">Şifre değiştir</a></li>
+      <li class="divider"></li>
+      <li class="dropdown-header"></li>
+      <li><a href="#">Geri bildirim gönder</a></li>
+      <li><a href="#">Çıkış yap</a></li>
+
+    </ul>
+  </div>
+</div>
+
+
+
+</body>
+</html>
